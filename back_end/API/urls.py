@@ -28,7 +28,6 @@ os = ImageViewSet.as_view({
 	'get': 'os'
 })
 
-
 urlpatterns = [
 	path('admin/', admin.site.urls),
 	path('',include(router.urls)),

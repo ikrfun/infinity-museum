@@ -28,4 +28,4 @@ class ImageViewSet(viewsets.ModelViewSet):
 		gomi = 1
 		cp = subprocess.run("ls", capture_output=True, text=True)
 		response = cp.stdout
-		return Response(response, status=status.HTTP_400_BAD_REQUEST)
+		return Response(response, status=status.HTTP_200_OK)
